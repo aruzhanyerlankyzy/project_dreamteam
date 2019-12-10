@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Veterinary clinic in Almaty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% load static %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="{% static 'myApp/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'myApp/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'myApp/css/dreamslider.min.css' %}" rel="stylesheet" type="text/css" media="screen"/>
+<link href="{% static 'myApp/css/work.css'%}" rel="stylesheet" type="text/css">
+<link href="{% static 'myApp/css/banner.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'myApp/css/style.css' %}" rel="stylesheet" type="text/css">
+<!-- /css files -->
+<!-- font files -->
+<link href='//fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<!-- /font files -->
+<!-- js files -->
+<script src="{% static 'myApp/js/modernizr.js' %}"></script>
+<!-- /js files -->
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/index.html"><h1>Veterinary clinic</h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#slide-1">Home</a></li>
+				<li><a href="#about">About us</a></li>
+				<li><a href="#slide-2">Services</a></li>
+				<li><a href="#slide-3">Client's comments</a></li>
+				<li><a href="#slide-4">Prices</a></li>
+				<li><a href="#slide-5">Contact</a></li>
+                <li><a href="logout">Logout</a></li>
+			</ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!-- /Fixed Navbar -->
+<!-- Ban -->
+<div class="slide story" id="slide-1">
+	<div id="content">
+        <div id="slider">
+
+			<img src="{% static 'myApp/images/images1.jpg' %}" alt="Careful" data-url="#1">
+			<img src="{% static 'myApp/images/images2.jpg' %}" alt="hands," data-url="#2">
+			<img src="{% static 'myApp/images/images3.jpg' %}" alt="careful" data-url="#3">
+			<img src="{% static 'myApp/images/images4.jpg' %}" alt="hearts" data-url="#4">
+		</div>
+	</div>
+</div>
+<!-- About Us -->
+<section class="about-us slideanim" id="about">
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="about-details">
+					<h3 class="slideanim">It Tells Us About Something</h3>
+					<p class="p1 slideanim">Dream team purchased Dreamteam Veterinary clinic in 2004 with the goal of creating a pet care facility that is exceptional at preventing and treating illness. Prior to 2004, Dream team worked as a Relief Veterinarian servicing many veterinary hospitals in central Ohio. She witnessed a large amount of variety in these facilities, but noticed the presence of two obstacles at every hospital. The first was a lack of communication with pet parents regarding their pet’s disease risks and how to prevent those conditions. The second was a lack of resources, whether financial, physical, or emotional, that were required when disease occured and treatment was necessary.</p>
+                    <p class="p2 slideanim">The foundation of Stringtown Animal Hospital was built upon overcoming these two obstacle. By focusing on the individual risks a patient has and the needs of the entire pet family, a pathway to healthier pets, happier clients, and affordable care is created.</p>
+                    <p class="p3 slideanim">We encourage you to interact with us. We want to know your expectations, needs, and concerns so we can develop a unique care plan, together as a team, that will be effective, affordable, and successful.</p>
+                </div>
+			</div>
+			<div class="col-sm-5">
+				<ul class="grid cs-style-5">
+					<li>
+						<figure>
+							<img src="{% static 'myApp/images/about-us.jpg' %}" alt="about-us" class="img-responsive slideanim">
+							<figcaption>
+								<h4>Our slogan:</h4>
+                                <h4>Happy Pet, Happy Heart</h4>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<!-- /Services -->
+<!-- === Slide 2 === -->
+<div class="slide story" id="slide-2">
+<section class="our-work slideanim">
+	<h3 class="text-center slideanim">Dreamteam veterinary services</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim">Happy Pet, Happy Heart</p>
+	<div class="container-fluid">
+		<div class="demo-wrapper">
+			<ul class="portfolio-items">
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="{% static 'myApp/images/risking-everything-to-become-a-doctor-jirayut-new-latthivongskorn.jpg' %}" alt=""> </div>
+						<figcaption>
+							<p><span><a class="popup-with-zoom-anim" href="#small-dialog1">Baigonus Dinmukhamed</a></span></p>
+                            <p><span >Surgeon</span></p>
+                        </figcaption>
+					</figure>
+
+					<div class="date">{{rating.}}</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="{% static 'myApp/images/female-doctor-surrounded-by-men.jpg' %}" alt=""> </div>
+						<figcaption>
+							<p><span><a class="popup-with-zoom-anim" href="#small-dialog1">Yerlankyzy Aruzhan</a></span></p>
+							<p><span>Dentistry</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">2</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="{% static 'myApp/images/images.jpg'%}" alt=""> </div>
+						<figcaption>
+							<p><span><a class="popup-with-zoom-anim" href="#small-dialog1">Akishev Dias</a></span></p>
+							<p><span>Therapy</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">3</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="{% static 'myApp/images/happydoctor.jpg' %}" alt=""> </div>
+						<figcaption>
+							<p><span><a class="popup-with-zoom-anim" href="#small-dialog1">Temirov Dias</a></span></p>
+							<p><span>Veterinary surgeon</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">{{rating.result}}</div>
+				</li>
+				<li class="item">
+					<figure>
+						<div class="view"> <img src="{% static 'myApp/images/images4.jpg' %}" alt=""> </div>
+						<figcaption>
+							<p><span><a class="popup-with-zoom-anim" href="#small-dialog1">Zhumaniyaz Dias</a></span></p>
+							<p><span>Vaccination</span></p>
+						</figcaption>
+					</figure>
+					<div class="date">5</div>
+				</li>
+			</ul>
+		</div>
+        <div id="popup">
+			<div id="small-dialog1" class="mfp-hide slideanim">
+				<div class="pop_up">
+					<div class="payment-online-form-left">
+						<form method="post" action="{% url 'add_comment' %}" >
+                            {% load static %}
+                            {% csrf_token %}
+							<h4><span> </span>Add comment </h4>
+                            {% csrf_token %}
+                            <input type="text" name="text" value="Text" onfocus="this.value = '';" required/><br>
+                            <input type="text" name="editor" value="username" onfocus="this.value = '';" required/><br>
+                            <select name="doctor" class="text-box-dark" required>
+                                <option>Select your doctor</option>
+                                <option value="Baigonus Dinmukhamed">Baigonus Dinmukhamed</option>
+                                <option value="Yerlankyzy Aruzhan">Yerlankyzy Aruzhan</option>
+                                <option value="Akishev Dias">Akishev Dias</option>
+                                <option value="Temirov Dias">Temirov Dias</option>
+                                <option value="Zhumaniyaz Dias">Zhumaniyaz Dias</option>
+                            </select>
+                            <hr>
+                            <h2>Rate the work of the doctor from 1 to 10</h2>
+                            <select name="rating" class="text-box-dark" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <hr>
+                            <button type="submit" class="signupbtn">Send</button>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+        <section class="history slideanim">
+	<h3 class="text-center slideanim">Our services</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim">Happy Pet, Happy Heart</p>
+	<div class="container">
+		<section class="tabs slideanim">
+			<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+			<label for="tab-1" class="tab-label-1">1</label>
+
+			<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+			<label for="tab-2" class="tab-label-2">2</label>
+
+			<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+			<label for="tab-3" class="tab-label-3">3</label>
+
+			<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+			<label for="tab-4" class="tab-label-4">4</label>
+
+			<div class="clear-shadow"></div>
+
+			<div class="content">
+				<div class="content-1">
+					<h3 class="his1">VACCINATIONS</h3>
+					<p>Vaccines are available for many of the contagious diseases that occur in dogs and cats. We will work with you to determine what risks your pet has and which vaccines will be beneficial. </p>
+					</div>
+				<div class="content-2">
+					<h3 class="his1">COMPREHENSIVE EXAMINATIONS</h3>
+					<p>Twice a year examinations allow detection of changes to your pet’s health before advanced illness occurs. Our doctors evaluate your entire pet from the top of their head to the tip of their tail and everywhere in between.
+                    </div>
+				<div class="content-3">
+					<h3 class="his1">MICROCHIPS</h3>
+					<p>Microchips provide reassurance that your pet will return home if they are lost. Peace of mind in the shape of a grain of rice is priceless. </span></p>
+                    </div>
+				<div class="content-4">
+					<h3 class="his1">EMERGENCY SERVICES</h3>
+					<p>When your pet becomes suddenly ill, you want the best care as fast as possible. Our entire team is trained to assist you quickly in determining whether your pet is experiencing an emergency and guide you through the process of getting them the treatment they need.</span></p>
+                </div>
+			</div>
+		</section>
+	</div>
+</section>
+<!-- /slide3 -->
+<!-- /Comments -->
+<div class="slide story" id="slide-3" data-slide="3">
+<section class="testimonials slideanim">
+	<h3 class="text-center slideanim">What Our Clients Are Saying</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim">Happy Pet, Happy Heart</p>
+    <div class="container">
+    {% for comment in latest_comments %}
+		<div class="row">
+			<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1 slideanim">{{comment.comments_text}}</p>
+					</div>
+					<div class="test-info2">
+						<img src="{% static 'myApp/images/test-img1.png'%}" alt="test-img" class="img-responsive slideanim">
+						<div class="test-details1 slideanim">
+                            <a>{{comment.comments_editor}}</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+    {% endfor %}
+			<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1">It is the best veterinary clinic</div>
+					<div class="test-info2">
+						<img src="{% static 'myApp/images/test-img2.png'%}" alt="test-img" class="img-responsive slideanim">
+						<div class="test-details2 slideanim">
+							<h4>Lady Gaga</h4>
+							<p class="test2">Biologist</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 client-info">
+				<div class="testimonial slideanim">
+					<div class="test-info1">
+						<p class="test1 slideanim">Doctors of this clinic are the best</div>
+					<div class="test-info2">
+						<img src="{% static 'myApp/images/test-img3.png'%}g" alt="test-img" class="img-responsive slideanim">
+						<div class="test-details3 slideanim">
+							<h4>Elizabeth</h4>
+							<p class="test2">Scientist</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div><!-- /slide4 -->
+<!-- /Testimonial Section -->
+<!-- Pricing Tables -->
+<div class="slide story" id="slide-4" data-slide="4">
+<section class="pricing-table slideanim">
+	<h3 class="text-center slideanim">Check Our Prices</h3>
+	<div class="container">
+		<hr>
+	</div>
+	<p class="text-center slideanim">Happy Pet, Happy Heart</p>
+	<div class="container">
+		<div class="grid1 slideanim">
+			<span>$15</span>
+			<h2>BASIC PLAN</h2>
+			<div class="para">
+				<p>1 Comprehensive Examination</p>
+				<p>1 Vitamin complex</p>
+				<p>Grooming Supplies & Shampoos</p>
+				<p>Free Vaccination</p>
+			</div>
+			<div class="sign text-center">
+				<a class="popup-with-zoom-anim" href="#small-dialog">BUY</a>
+			</div>
+		</div>
+		<div class="grid2 slideanim">
+			<span>$25</span>
+			<h2>PREMIUM PLAN</h2>
+			<div class="para">
+				<p>2 Comprehensive Examination</p>
+				<p>1 Vitamin complex, Flea & Tick Products</p>
+				<p>Grooming Supplies & Shampoos</p>
+				<p>2 Free Vaccinations</p>
+			</div>
+			<div class="sign text-center">
+				<a class="popup-with-zoom-anim" href="#small-dialog">BUY</a>
+			</div>
+		</div>
+		<div class="grid3 slideanim">
+			<span>$35</span>
+			<h2>ULTIMATE PLAN</h2>
+			<div class="para">
+				<p>3 Comprehensive Examination</p>
+				<p>1 Vitamin complex with minerals, Flea & Tick Products</p>
+				<p>Grooming Supplies & Shampoos</p>
+				<p>2 Free Vaccinations + Dental Health</p>
+			</div>
+			<div class="sign text-center">
+				<a class="popup-with-zoom-anim" href="#small-dialog">BUY</a>
+			</div>
+		</div>
+		<div class="clear"> </div>
+	<!--pop-up-grid-->
+		<div id="popup">
+			<div id="small-dialog" class="mfp-hide slideanim">
+				<div class="pop_up">
+					<div class="payment-online-form-left">
+						<form method="post" action="{% url 'receipt' %}">
+                            {% load static %}
+                            {% csrf_token %}
+							<h4><span class="shipping"> </span>Shipping Details</h4>
+                            {% csrf_token %}
+                            <ul>
+                                <input class="text-box-dark" type="text" name="username" value="Username" onfocus="this.value = '';" required/>
+                                <input class="text-box-dark" type="text" name="email" value="Email" onfocus="this.value = '';" required/>
+                                <input class="text-box-dark" type="text" name="pet" value="Pet" onfocus="this.value = '';" required/>
+                                <select name="package_name" class="text-box-dark" required>
+                                    <option>Select type of plan</option>
+                                    <option value="Basic">Basic</option>
+                                    <option value="Premium">Premium</option>
+                                    <option value="Ultimate">Ultimate</option>
+                                </select>
+                            </ul>
+							<div class="clear"></div>
+							<h4 class="paymenthead"><span class="payment"></span>Payment Details</h4>
+							<div class="clear"></div>
+							<ul class="payment-type">
+								<li><span class="col_checkbox">
+										<input id="3" class="css-checkbox1" type="checkbox">
+										<label for="3" class="css-label1"></label>
+										<a class="visa" href="#"></a>
+									</span>
+								</li>
+								<li>
+									<span class="col_checkbox">
+										<input id="4" class="css-checkbox2" type="checkbox">
+										<label for="4" class="css-label2"></label>
+										<a class="paypal" href="#"></a>
+									</span>
+								</li>
+							</ul>
+							<ul>
+								<li><input class="text-box-dark" type="text" name="Number" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+								<li><input class="text-box-dark" type="text" name="Name" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+							</ul>
+							<ul>
+								<li><input class="text-box-light hasDatepicker" name="Date" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+								<li><input class="text-box-dark" name="Name" type="text" value="Security Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+							</ul>
+							<ul class="payment-sendbtns">
+								<li><input type="reset" value="Reset"></li>
+								<button type="submit" class="signupbtn">Process order</button>
+							</ul>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--button title="Close (Esc)" type="button" class="mfp-close">×</button-->
+	<!--pop-up-grid-->
+	</div>
+</section>
+</div>
+<!-- /slide-5 -->
+<!-- About us -->
+        <div class="slide story" id="slide-5" data-slide="5">
+<section class="footer">
+	<div class="container">
+		<div class="col-lg-3 col-sm-6">
+			<div class="footer-about">
+				<h3>About-us</h3>
+				<p>The best veterinary clinic in Almaty<a href="#slide-2" data-slide="2"></a>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+			<div class="footer-nav">
+				<h3>Browse It</h3>
+				<ul class="links">
+					<li><a href="#slide-1"><span class="icon icon-home"></span> Home</a></li>
+					<li><a href="#about"><span class="icon icon-user"></span> About us</a></li>
+					<li><a href="#slide-2"><span class="icon icon-camera"></span> Services</a></li>
+					<li><a href="#slide-3"><span class="icon icon-heart"></span> Client's comments</a></li>
+					<li><a href="#slide-4"><span class="icon icon-gears"></span> Prices</a></li>
+					<li><a href="login/"><span class="icon icon-envelope"></span> Login</a></li>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+			<div class="footer-address">
+				<h3>Our Address</h3>
+				<div class="contact-info">
+					<div class="address">
+						<i class="icon icon-globe"></i>
+						<p class="p3">40 Manas Street</p>
+						<p class="p4">Almaty, Kazakhstan</p>
+					</div>
+					<div class="phone">
+						<i class="icon icon-phone"></i>
+						<p class="p3">+1 515 151515</p>
+						<p class="p4">+1 010 010101</p>
+					</div>
+					<div class="email-info">
+						<i class="icon icon-envelope"></i>
+						<p class="mail"><a href="mailto:myemail@example.com">mail@example.com</a></p>
+					</div>
+                    <div class="icon-instagram-info">
+						<i class="icon icon-envelope"></i>
+						<p class="fa fa-instagram"><a href="https://instagram.com/dream.clinic_">Instagram</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <section class="map">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 slideanim">
+				<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+	<div class="container">
+	<hr>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="copyright">
+					<p class="text-center">© 2019 Veterinary clinic. All Rights Reserved | Design by Dream team</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+<!-- /Footer section -->
+
+	<!-- SCRIPTS -->
+	<script src="{% static 'myApp/js/jquery-1.10.2.min.js'%}"></script>
+	<script src="{% static 'myApp/js/bootstrap.min.js'%}"></script>
+	<script src="{% static 'myApp/js/SmoothScroll.min.js' %}"></script>
+	<!-- js for banner -->
+	<script src="{% static 'myApp/js/classie.js' %}"></script>
+	<script src="{% static 'myApp/js/TweenMax.min.js' %}"></script>
+	<script src="{% static 'myApp/js/banner.js' %}"></script>
+	<!-- /js for banner -->
+	<!-- js for top of work section -->
+	 <script src="{% static 'myApp/js/index.js' %}"></script>
+	<!-- /js for top of work section -->
+	<!-- js for works section -->
+	<script src="{% static 'myApp/js/modernizr-1.5.min.js' %}"></script>
+	<script src="{% static 'myApp/js/jquery.mousewheel.js' %}"></script>
+	<script src="{% static 'myApp/js/work.js' %}"></script>
+	<!-- /js for works section -->
+	<!-- js for footer pics -->
+	<script type="text/javascript" src="{% static 'myApp/js/photoGallery.js' %}"></script>
+	<script type="text/javascript">
+	$(function(){
+		var photoGallery = new PhotoGallery();
+	});
+	</script>
+	<!-- js for footer pics -->
+	<!-- js for gallery -->
+	<script type="text/javascript" src="{% static 'myApp/js/dreamslider.min.js' %}"></script>
+    <script type="text/javascript">
+            $(function(){
+                $('.container').dreamSlider({
+                    rowCount:6
+                    //,easeEffect: 'bounce'
+                    //,easeEffect: 'standOut'
+                });
+            });
+    </script>
+	<!-- js for gallery -->
+<!-- js for smooth navigation -->
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, section.footer a").on('click', function(event) {
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+<!-- /js for smooth navigation -->
+		<!-- js for pricing table -->
+		<script src="{% static 'myApp/js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+			$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+			});
+			});
+		</script>
+		<!-- /js for pricing table -->
+</html>
